@@ -104,7 +104,7 @@ EOF
   # Force a rebuild of the master branch
   def rebuild
     reset
-    system "git push #{extract_app_from_git_config || "heroku"} master"
+    system "git push heroku heroku-work1:master"
   end
 
   private
